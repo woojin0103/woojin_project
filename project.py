@@ -12,7 +12,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)
 
 # 2. 데이터 로딩
-path = "reviews_clean_final.csv"
+path = "reviews_test.csv"
 df = pd.read_csv(path)  # utf-8 기본 인코딩
 data_X = df['review'].tolist()
 labels = df['rating'].tolist()
@@ -92,6 +92,6 @@ for i, (loss, train_acc, val_acc) in enumerate(epoch_results, start=1):
 
 # 9. 모델 저장
 save_path = "mobilebert-finetuned-reviews"
-model.save_pretrained(save_path)
-tokenizer.save_pretrained(save_path)
+model.save_pretrained(save_path + '.pt')
+# tokenizer.save_pretrained(save_path)
 print("모델 저장 완료:", save_path)
