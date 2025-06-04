@@ -61,7 +61,10 @@ MobileBERT를 활용한 리뷰 기반 감성 분류 모델을 학습시키기 �
 |2000|The People Who Work There Were Very Rude&Short In Response...|0|
 
 ---
-## 4. MobileBERT 학습 결과
+## 4. 결과
+
+### 4-1 MobileBERT 학습 결과
+<img src="img2.png" width="600" />
 
 ---
 ## 5. 결론 및 느낀점
